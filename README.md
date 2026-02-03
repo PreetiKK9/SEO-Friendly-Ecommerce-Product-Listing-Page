@@ -93,6 +93,7 @@ Lighthouse, PageSpeed Insights, Google Search Console, and Real User Monitoring.
 SETUP INSTRUCTIONS
 
 npm install
+
 npm run dev
 
 CONCLUSION
