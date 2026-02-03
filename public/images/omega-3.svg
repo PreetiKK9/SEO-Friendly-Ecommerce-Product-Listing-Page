@@ -1,0 +1,15 @@
+<svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fish Oil Icon: Capsule with fish and oil drop -->
+  <rect x="20" y="30" width="200" height="60" rx="20" fill="#FFD700" /> <!-- Capsule body -->
+  <rect x="50" y="30" width="200" height="60" rx="20" fill="#FFA500" /> <!-- Capsule cap -->
+  <line x1="50" y1="30" x2="50" y2="70" stroke="#FFF" stroke-width="2" /> <!-- Split line -->
+  
+  <!-- Small fish inside -->
+  <path d="M35 50 Q40 45 45 50 Q50 55 55 50 Q50 45 45 50 Q40 55 35 50 Z" fill="#1E90FF" scale="5" />
+  <circle cx="57" cy="50" r="2" fill="#000" /> <!-- Eye -->
+  <path d="M30 50 L25 47 L25 53 Z" fill="#1E90FF" /> <!-- Tail -->
+  
+  <!-- Oil drop below -->
+  <path d="M50 80 Q55 75 60 80 Q55 90 50 80 Z" fill="#FFD700" />
+  <text x="50" y="95" font-size="18" text-anchor="middle" fill="#333" font-family="Arial, sans-serif">Fish Oil</text>
+</svg>

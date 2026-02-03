@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+SEO-Friendly E-commerce Product Listing Page (PLP)
+--------------------------------------------------
 
-## Getting Started
+This project implements a consumer-facing e-commerce Product Listing Page (PLP) with a Product Detail
+Page (PDP) using Next.js App Router. The focus is on SEO fundamentals, performance, accessibility, and
+production-quality frontend decisions.
 
-First, run the development server:
 
-```bash
+TECH STACKS
+- Framework: Next.js (App Router)
+- Language: TypeScript
+- Styling: Plain CSS
+- Data Source: Static JSON (mock catalog)
+- Rendering Strategy: Static Site Generation (SSG)
+
+
+Features Implemented
+Product Listing Page (PLP)
+- Responsive product grid
+- Product image, name, price, short description
+- Navigation to Product Detail Page
+
+
+Product Detail Page (PDP)
+- Individual crawlable URLs
+- Full product description
+- Schema.org Product structured data
+
+
+SEO CONSIDERATIONS
+
+Semantic HTML
+
+Uses header, main, section, article, and proper heading hierarchy to improve crawlability and accessibility.
+
+Metadata
+
+Page-level titles and descriptions are defined using Next.js metadata APIs.
+
+Structured Data
+
+Product pages include JSON-LD using Schema.org Product.
+
+Crawlability & Rendering
+
+The project uses Static Site Generation (SSG) to ensure HTML is fully rendered at build time. Dynamic
+product routes are pre-generated, making all pages indexable by search engines.
+
+PERFORMANCE
+
+Image Optimization
+
+- Native lazy loading for product images
+- Explicit dimensions to prevent layout shift
+- SVGs rendered using standard img tags to avoid unnecessary optimization
+
+Largest Contentful Paint (LCP)
+
+- Optimized images
+- Minimal JavaScript
+- Pre-rendered HTML
+
+Cumulative Layout Shift (CLS)
+
+- Fixed image dimensions
+- No layout-affecting late-loading elements
+
+ACCESSIBILITY
+
+- Meaningful alt text for images
+- Keyboard-navigable links
+- Semantic HTML for screen readers
+
+SEO-FRIENDLY PAGINATION
+
+Pagination is not rendered in the demo UI due to the small mock dataset. In a production-scale catalog,
+URL-based pagination (e.g. ?page=2) with crawlable links would be implemented to ensure scalability and
+SEO correctness.
+
+QUESTIONS
+1. What makes this page SEO-friendly?
+Semantic HTML, SSG, metadata, structured data, and optimized images.
+2. What would you change for 100,000 products?
+Introduce pagination, ISR, backend APIs, caching, and category-based indexing.
+3. Common SEO mistakes frontend engineers make?
+Client-only rendering, missing metadata, CLS issues, and infinite scroll without crawlable URLs.
+4. SPA vs SSR/SSG SEO differences?
+SSR/SSG provides immediate HTML for crawlers, while SPAs rely on JavaScript execution.
+5. Measuring SEO and performance in production?
+Lighthouse, PageSpeed Insights, Google Search Console, and Real User Monitoring.
+
+
+SETUP INSTRUCTIONS
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+CONCLUSION
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project demonstrates SEO-aware frontend development, performance optimization, accessibility best
+practices, and scalable architectural thinking aligned with production standards.
