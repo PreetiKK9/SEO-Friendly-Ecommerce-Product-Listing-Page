@@ -99,4 +99,11 @@ npm run dev
 CONCLUSION
 
 This project demonstrates SEO-aware frontend development, performance optimization, accessibility best
+<img width="1440" height="857" alt="Screenshot 2026-02-04 at 12 42 45 AM" src="https://github.com/user-attachments/assets/d99adf02-1fda-4be4-948b-483d6c4f094f" />
+<img width="1440" height="859" alt="Screenshot 2026-02-04 at 12 42 58 AM" src="https://github.com/user-attachments/assets/cb64614a-eede-466f-8f68-04962dc76dde" />
+<img width="1437" height="857" alt="Screenshot 2026-02-04 at 12 42 30 AM" src="https://github.com/user-attachments/assets/5b6c1dd9-ec0a-4ddd-b3fd-38c7b35b23e7" />
+<img width="1440" height="849" alt="Screenshot 2026-02-04 at 12 42 20 AM" src="https://github.com/user-attachments/assets/b899de54-e9c6-4f58-b103-0948b51acdc1" />
+
 practices, and scalable architectural thinking aligned with production standards.
+
+
